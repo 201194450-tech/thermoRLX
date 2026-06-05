@@ -1,0 +1,233 @@
+﻿* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #0b1322;
+  color: #e8eef7;
+  line-height: 1.65;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 4rem;
+  background: linear-gradient(135deg, #122240 0%, #1a2d4d 100%);
+}
+.hero-copy {
+  max-width: 660px;
+}
+.badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #d4e0ff;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 4vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+.hero-text {
+  margin: 1.4rem 0 2rem;
+  color: #c8d3eb;
+  max-width: 600px;
+  font-size: 1.05rem;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.button {
+  text-decoration: none;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.button:hover {
+  transform: translateY(-2px);
+}
+.button-primary {
+  background: #ff7f50;
+  color: #08101d;
+}
+.button-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #f7fbff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.hero-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-image {
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 30px 80px rgba(1, 20, 50, 0.35);
+}
+.section {
+  padding: 4rem 4rem;
+}
+.section-light {
+  background: #09101f;
+}
+.section-dark {
+  background: #0c1a32;
+}
+.section-header h2 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+.section-header p {
+  margin: 0;
+  max-width: 760px;
+  color: #b8c6e3;
+}
+.cards-grid,
+.grid-columns,
+.conclusion-grid,
+.table-group {
+  display: grid;
+  gap: 1.5rem;
+}
+.cards-grid {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+.card,
+.box,
+.table-card,
+.timeline-item,
+.info-panel,
+.image-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 1.8rem;
+}
+.card h3,
+.box h3,
+.table-card h3,
+.timeline-item h3 {
+  margin-top: 0;
+  color: #f4f9ff;
+}
+.card p,
+.box p,
+.timeline-item p,
+.info-panel p,
+.image-card figcaption,
+.section-header p {
+  color: #c7d2ea;
+}
+.info-panel ul,
+.table-section ul,
+.two-column ul {
+  padding-left: 1.2rem;
+}
+.info-panel ul li,
+.table-section ul li,
+.two-column ul li {
+  margin-bottom: 0.65rem;
+}
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.image-card {
+  padding: 1rem;
+}
+.image-card figcaption {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #9cb3d6;
+}
+.grid-columns {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+.table-group {
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #e8eef7;
+}
+thead th {
+  text-align: left;
+  padding: 1rem 1rem 0.75rem;
+  color: #f8fbff;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.timeline {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.timeline-item {
+  border-left: 4px solid #ff7f50;
+  padding-left: 1.2rem;
+}
+.conclusion-grid {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  margin-top: 2rem;
+}
+.section-footer {
+  text-align: center;
+  background: #06101c;
+  color: #a8b8d9;
+}
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-media {
+    margin-top: 2rem;
+  }
+  .two-column,
+  .cards-grid,
+  .grid-columns,
+  .table-group,
+  .conclusion-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .section,
+  .hero {
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}

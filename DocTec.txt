@@ -1,0 +1,4 @@
+https://www.farnell.com/datasheets/1537425.pdf
+https://iaciduino.enp.unam.mx/index.php/manual-de-programacion-con-arduino/
+https://www.digikey.com.mx/es/products/filter/rel%C3%A9s-de-potencia-sobre-2-amperios/188?s=N4IgTCBcDaIE4FMA2BDAngZxAXQL5A
+

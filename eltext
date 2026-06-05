@@ -1,0 +1,239 @@
+opcion 1
+    imagina un prototipo 3D con las siguientes características: 
+    un aparato electrónico de dimensiones parecidas a una imoresora.
+    su funcion es calentar compresas (sacos con arena o arroz para mantener calor) 
+tendra una interfaz con botones que encienden una placa de metal que se calienta (como una plancha), esta plancha será la base de un compartimento  de cristal templado llenado con agua que se calentará
+y por induccion calienta el cristal
+las compresas se colocaran encima del cristal y tiene una tapa para mantener el calor encerrado,
+
+ el cristal templado debe tener un agujero para rellenar el agua y para liberar vapor, sobre el un compartimento para depositar una bolsa de té que recibirá el vapor favoreciendo buen aroma
+el prototipo será un proyercto universitario de la carrera de ingeniería en sistemas computacionales, con la intencion de mostrar las habilidades adquiridas y economizar en la elaboración del producto, se penso en los siguientes materiales accesibles en casa para dichas funciones
+| Parte | Material casero sugerido | Función | Comentario técnico |
+| --- | --- | --- | --- |
+| **Compartimento de cristal templado** | Refractario de cocina (Pyrex o vidrio borosilicato) | Contiene el agua y transmite el calor | Ideal: soporta altas temperaturas y es común en hogares. |
+| **Placa calefactora** | Base metálica de una plancha vieja o resistencia de parrilla eléctrica | Fuente de calor | Puede reutilizarse y conectarse al relé del circuito. |
+| **Tapa superior** | Tapa de plástico o acrílico reciclado (de contenedor o caja) | Conserva el calor y vapor | Se puede adaptar con bisagras simples. |
+| **Compartimento de té** | Colador metálico o infusor de té reutilizable | Difusor de aroma | Permite paso de vapor y es fácil de conseguir. |
+| **Base estructural** | Caja de madera, MDF o incluso una caja plástica resistente | Soporte del circuito y componentes | Se puede perforar para colocar botones y pantalla. |
+| **Interfaz digital** | Pantalla LCD + botones montados en una tapa frontal de plástico | Control de temperatura y tiempo | Se fija con tornillos o pegamento caliente. |
+
+
+Tu idea tiene mucho potencial como proyecto universitario porque combina electrónica, automatización, control térmico, interfaz digital y diseño físico funcional.
+A nivel conceptual, el dispositivo se parece a una mezcla entre una incubadora térmica, un calentador de compresas terapéuticas y un difusor aromático.
+
+Concepto del prototipo
+Nombre conceptual
+
+ThermoRelax System
+(o cualquier nombre relacionado con bienestar térmico inteligente)
+
+Diseño general del aparato
+Vista conceptual del sistema
+
+El dispositivo tendría dimensiones similares a una impresora doméstica pequeña:
+
+Aproximadamente:
+45 cm ancho
+35 cm fondo
+25 cm alto
+
+La estructura se divide en:
+
+Base electrónica y calefactora
+Compartimento térmico de agua
+Zona de compresas
+Sistema aromático de vapor
+Interfaz digital
+Funcionamiento técnico
+1. Sistema de calentamiento
+
+En la parte inferior:
+
+Una resistencia reciclada (plancha vieja o parrilla eléctrica)
+Controlada mediante:
+relé
+MOSFET
+Arduino
+
+La resistencia calienta:
+
+una placa metálica
+que transmite calor al refractario de vidrio con agua
+
+El agua:
+
+acumula calor
+distribuye temperatura uniforme
+genera vapor moderado
+
+Después:
+
+el cristal caliente transmite calor a las compresas terapéuticas colocadas encima.
+Distribución interna
+ ┌───────────────────────────────┐
+ │        TAPA SUPERIOR          │
+ │  (conserva calor y vapor)     │
+ ├───────────────────────────────┤
+ │      COMPRESAS TÉRMICAS       │
+ ├───────────────────────────────┤
+ │ CRISTAL TEMPLADO / PYREX      │
+ │      con agua caliente        │
+ │   ○ entrada/salida de vapor   │
+ ├───────────────────────────────┤
+ │    PLACA METÁLICA CALIENTE    │
+ ├───────────────────────────────┤
+ │ ELECTRÓNICA + ARDUINO + RELÉ  │
+ └───────────────────────────────┘
+Sistema de vapor aromático
+
+El cristal tendría:
+
+un pequeño orificio metálico superior
+doble función:
+rellenado de agua
+liberación de vapor
+
+Encima del orificio:
+
+un infusor o colador metálico reutilizado
+donde se coloca:
+té
+hierbas
+eucalipto
+manzanilla
+
+El vapor pasa por el compartimento y libera aroma natural.
+
+Interfaz digital
+Componentes sugeridos
+Arduino UNO/Nano
+Pantalla LCD 16x2
+Botones:
+Encendido
+Temperatura +
+Temperatura –
+Tiempo
+
+Funciones:
+
+controlar temperatura
+temporizador
+apagado automático
+indicador de calentamiento
+Materiales reutilizables y económicos
+
+Tu selección es bastante adecuada para un prototipo universitario.
+
+Sistema	Material reciclado	Ventaja
+Calefacción	Plancha vieja	Alta temperatura y fácil conexión
+Contenedor térmico	Refractario Pyrex	Resiste choque térmico
+Estructura	MDF o madera	Fácil perforación
+Tapa	Acrílico reciclado	Ligero y económico
+Difusor	Infusor de té	Reutilizable
+Electrónica	Arduino	Bajo costo y muy didáctico
+Componentes electrónicos recomendados
+Componente	Función
+Arduino UNO	Control principal
+Sensor DS18B20 o LM35	Medición de temperatura
+Relé 5V	Activar resistencia
+LCD 16x2	Mostrar datos
+Botones pulsadores	Interfaz
+Fuente 12V/5V	Alimentación
+Fusible térmico	Seguridad
+Seguridad (muy importante para exposición)
+
+Debido al agua y calor:
+
+Recomendaciones esenciales
+Aislamiento eléctrico
+Separar completamente:
+zona de agua
+circuitos
+Protección térmica
+
+Agregar:
+
+fusible térmico
+apagado automático si excede temperatura
+Ventilación
+
+Pequeñas rejillas inferiores para:
+
+disipar calor electrónico
+Materiales
+
+Evitar:
+
+plásticos delgados cerca de resistencia
+Valor académico del proyecto
+
+Este prototipo demuestra conocimientos de:
+
+Ingeniería en sistemas computacionales
+Hardware
+sensores
+controladores
+electrónica básica
+Programación
+lógica de control
+temporizadores
+automatización
+Diseño de sistemas
+interacción usuario-máquina
+integración térmica
+Innovación
+reutilización de materiales
+enfoque sustentable
+Mejoras futuras (para impresionar en la presentación)
+Nivel 2 del proyecto
+
+Podrías agregar:
+
+sensor de nivel de agua
+control automático PID de temperatura
+Bluetooth/WiFi
+app móvil
+LEDs indicadores
+pantalla táctil
+batería de respaldo
+Concepto visual imaginado
+
+Imagina:
+
+una caja moderna tipo impresora pequeña
+frontal negro mate
+pantalla LCD azul
+botones iluminados
+tapa transparente con vapor tenue
+compresas calientes dentro
+aroma saliendo suavemente del infusor superior
+
+Se vería como un producto real de bienestar terapéutico.
+
+Punto técnico importante
+
+Mencionas “inducción”, pero realmente el sistema descrito funciona más por:
+
+conducción térmica
+transferencia de calor por contacto
+convección del agua caliente
+
+La inducción real requeriría:
+
+bobinas electromagnéticas
+recipientes ferromagnéticos especiales
+
+Para un proyecto universitario económico, tu enfoque actual es mucho más viable y seguro.
+
+Cómo podrías presentarlo en la universidad
+Enfoque del proyecto
+
+“Sistema automatizado de calentamiento terapéutico mediante control digital de temperatura y reutilización de materiales domésticos.”
+
+Posible objetivo general
+
+Diseñar e implementar un prototipo automatizado capaz de calentar compresas terapéuticas mediante control electrónico de temperatura, utilizando materiales reutilizados y una interfaz digital programable.
+
+Posible título formal
+
+“Desarrollo de un prototipo automatizado para calentamiento de compresas terapéuticas mediante control térmico digital y difusión aromática.”
